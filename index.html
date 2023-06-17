@@ -16,51 +16,59 @@
 
 <body>
     <div class="main-container">
-        <header>
-            <div class="flexBetween"> 
-                <div >
-                    <img class="logoTaille" src="images/logo/Booki.png" alt="le-logo" >
+        <header class="flexBetween">
+                <div class="logoTaille">
+                    <img src="images/logo/Booki.png" alt="le-logo" >
                 </div>
-                <div class="sizeLiens flexAround sizeLiensTaille">
-                    <div class="sizeLien flexCenter bordureLien"><a class="colorLiens2 DecorationNone" href="" >Hébergements</a></div>
+                <div class="sizeLiens flexBetween">
+                    <div class="sizeLien flexCenter bordureLien bordureLienM"><a class="colorLiens2 DecorationNone" href="" >Hébergements</a></div>
                     <div class="sizeLien flexCenter"><a class="colorLiens1 DecorationNone" href="" >Activités</a></div>
                 </div> 
-            </div>  
         </header>
         <main>
             <section>
             <div>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre-ville ou en pleine nature</p>  
+                <div class="txtsDebut">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre-ville ou en pleine nature</p>  
+                </div>
                 <div class="bar-recherche flexCenter">         
                     <div class="backGris iconSize flexCenter"><i class="fa-solid fa-location-dot colorNoir"></i></div>
                     <div >
                         <input class="recherche flexCenter rechercheBordure paddingLeft" type="search" value="Marseille , France">
                     </div>   
-                    <div class="backBleu boutonRecherche flexCenter">Rechercher </div>
+                    <div class="backBleu boutonRecherche flexCenter">
+                        <span class="boutonReNone">Rechercher </span>
+                        <span class="DeskNone"><i class="fas fa-search"></i></span>
+                    </div>
                 </div>
-            <div class="filtres">
+            <div class="filtres filtreNone">
                 <div class="filtreMarg">
                    <h3>Filtres</h3>
                    </div>
-                <div class="flexBetween filtresConteneur ">
-                    <i class="fa-solid fa-money-bill-wave fa-lg filtresIcone flexCenter"></i>
-                    <div class="filtresTexte flexCenter"><h3>Économique</h3></div>
+                <div class="filtreNone filtre1">
+                    <div class="flexBetween filtreBox ">
+                        <i class="fa-solid fa-money-bill-wave fa-lg filtresIcone flexCenter"></i>
+                        <div class="filtresTexte flexCenter"><h3>Économique</h3></div>
+                    </div>
+                    <div class=" flexBetween filtreBox">
+                        <i class="fa-solid fa-child-reaching fa-lg filtresIcone flexCenter"></i>
+                        <div class="filtresTexte flexCenter"><h3>Familial</h3></div>
+                    </div>
                 </div>
-                <div class=" flexBetween filtresConteneur">
-                    <i class="fa-solid fa-child-reaching fa-lg filtresIcone flexCenter"></i>
-                    <div class="filtresTexte flexCenter"><h3>Familial</h3></div>
+                <div class="filtreNone filtre2">
+                    <div class="flexBetween filtreBox ">
+                        <i class="fa-solid fa-heart fa-lg filtresIcone flexCenter"></i>
+                        <div class="filtresTexte flexCenter"><h3>Romantique</h3></div>
+                    </div>
+                    <div class="flexBetween filtreBox ">
+                        <i class="fa-solid fa-fire fa-lg filtresIcone flexCenter"></i>
+                        <div class="filtresTexte flexCenter"><h3>Nos pépites</h3></div>
+                    </div>
                 </div>
-                <div class="flexBetween filtresConteneur ">
-                    <i class="fa-solid fa-heart fa-lg filtresIcone flexCenter"></i>
-                    <div class="filtresTexte flexCenter"><h3>Romantique</h3></div>
-                </div>
-                <div class="flexBetween filtresConteneur ">
-                    <i class="fa-solid fa-fire fa-lg filtresIcone flexCenter"></i>
-                    <div class="filtresTexte flexCenter"><h3>Nos pépites</h3></div>
-                </div>
+               
             </div>
-            <div class="icone">
+            <div class="iconeParaInfo">
                 <div class="infoIcone flexCenter"><i class="fa-solid fa-info fa-xs"></i></div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
@@ -69,8 +77,7 @@
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
-                        
+                        <h2 class="section-title">Hébergements à Marseille</h2>  
                     </div>
                     <div class="hebergements-cards">
                         <div class="container1">
