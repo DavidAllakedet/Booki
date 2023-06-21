@@ -16,12 +16,17 @@
 
 /****** header *******/
 
-
+.entete{
+margin-top: -7px;
+}
 /***** body *****/
 
 body {
     display: flex;
     justify-content: center;
+}
+main{
+    margin-left: 30px;
 }
 
 /******** Tout mes flex ******/
@@ -49,15 +54,13 @@ body {
     border: none;
 }
 /***** mes liens de navigation et leur couleurs ****/
-.logoTaille{
+.entete img{
     width: 80px;
-    height: 25px;
-}
-.sizeLiensTaille{
-    height: 100px;
+    padding-left: 10px;
 }
 
 .sizeLiens{
+    margin-top: none;
     width : 20%
 }
 .sizeLien {
@@ -105,44 +108,39 @@ body {
 .bar-recherche{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    width: 780px;
-    border-radius: 10px;
     margin-top: 40px;
     
 }
 .iconSize{
-    width: 50px;
+    width: 5%;
     height: 50px;
     background-color:#F2F2F2;
     color: #000000;
     border-radius: 15px 0 0 15px;
 }
 .iconSize i{
-    padding-left: 8px;
-    font-size: 25px;
+    align-self: center;
 }
 .boutonRecherche{
-    width: 100px;
+    width: 8%;
     height: 50px;
     color: white;
     cursor: pointer;
     border-radius: 0 15px 15px 0;
-}
-
-.PaddingLeft{
-    padding-left: 50px;
 }
 .DeskNone{
     display: none;
 }
 .recherche{
     height: 50px;
-    width: 400px;
+    width: 18%;
+}
+.recherche input{
+    width: 100%;
+    height: 50px;
     font-size: 20px;
-    text-align: center;
-    color: #000000;
-    font-weight: bold; 
+    font-weight: bold;
+    padding-left: 20px;
 }
 /**** Filtres *****/
 
@@ -155,13 +153,11 @@ body {
 .filtre1{
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
 }
 .filtre2{
     display: flex;
     flex-direction: row;
-}
-.filtreMarg{
-    
 }
 .filtreBox{
     height: 50px;
@@ -171,7 +167,6 @@ body {
 }
 .filtresTexte{
     height: 50px;
-    padding-left: 20px;
     padding-right: 20px;
 }
 .filtresIcone{
@@ -295,20 +290,21 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    padding-left: 10px;
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
 
 .hebergements-cards .card-subtitle {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
     font-size: 14px;
 }
 
 .hebergements-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     margin-top: 5px;
 }
 
@@ -372,28 +368,34 @@ body {
     margin: 60px 50px 50px ;
 }
 .activites-cards{
-    display: flex;
-    height: 20%;
-    margin-top: 20px;
-    gap: 20px;
-}
-.activites-cards .card{
-width: 25%;
-
+    display: flex;   
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
 }
 .activites-cards .card-content{
-    height: 400px;
-    
-    
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    background-color: #ffffff;
+    border-radius: 15px ;
+    box-shadow: 1px 1px 1px 2px #F2F2F2
 }
-.activites-cards .card img{
-    height: 100%;
-    width: 100%;
+.activites-cards .card-content img{
+width: 100%;
+height: 400px;
+border-top-left-radius:15px;
+border-top-right-radius: 15px;
 }
-.activites-cards .card p{
-    margin-top: 33px; 
-    box-shadow: #000000 3px solid;
+.activites-cards .card-content h4{
+    height: 20px;
+    margin-top: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 10px;
+    padding-top: 20px;
 }
+
 
 /****** footer *****/
 footer{
@@ -453,53 +455,54 @@ margin-left: 20px;
 @media (max-width: 767.98px) {
     /* ... */
 /**  header **/
-header{
+   /***** mes liens de navigation et leur couleurs ****/ 
+
+.entete{
     display: flex;
     flex-direction: column;
-    font-size: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
-header .logoTaille{
-    margin-left: 100px;
-    width: 200px;
-    height: 100px;
+.entete img{
+    width: 140px;
+    height: 40px;
+    margin-top: 50px;
 }
-/***** mes liens de navigation et leur couleurs ****/
 .sizeLiens{
-    display: flex;
-    flex-direction: row;    
     width: 100%;
+    display: flex;
+    flex-direction: row;  
+}
+.sizeLien {
+    width: 50%;
+    height: 100px;
+    font-size: 30px;
 }
 .bordureLien{
     border-top: none;
 }
-.bordureLienM{
+.bordureLienM-B{
     border-bottom: #0065FC 2px solid;
-    width: 60%;
+    size:150%;
+}
+.bordureLienM-G{
+    border-bottom:  #F2F2F2 2px solid;
+    size: 150%;
 }
 
-/***/
+
+/****** body ****/
     body {
         display: flex;
-        justify-content: center;
-        margin-left: 500px;
+        justify-content: center; 
     }
 
-    .logoTaille{
-        width: 40px;
-        height: 5px;
-    }
-
-    .hebergements-and-populaires {
+.hebergements-and-populaires {
         width: 100%;
-        padding: 100px;
-       
+        
     }
 /****** textes debut *******/
 .txtsDebut{
-    margin-left: 100px;
-    font-size: 30px;
+    
+    font-size:20px;
 }
 /****** paragraphe info *****/
 .infoIcone{
@@ -512,8 +515,7 @@ header .logoTaille{
 .iconeParaInfo{
     display: flex;
     align-items: center;
-    font-size: 40px;
-    margin-left: 100px;
+    font-size: 20px;
     margin-top: 50px;
 }
 .iconeParaInfo i{
@@ -521,28 +523,27 @@ header .logoTaille{
 }
     /***** Bar de recherche ***/
 .bar-recherche{
-    font-size: 60px;
+    font-size: 50px;
     width:100%;
-    margin-left: 100px;
     margin-top: 50px;
 }
 .iconSize{
-    width: 100px;
-    height: 100px;
+    width: 20%;
+    height: 80px;
     background-color: rgb(232, 232, 232);
     color: #000000;
     border-radius: 15px 0 0 15px;
 }
 .iconSize i{
     padding-left: 8px;
-    font-size: 60px;
+    font-size: 40px;
 }
 .boutonRecherche{
-    width: 100px;
-    height: 100px;
+    width: 20%;
+    height: 80px;
     color: white;
     cursor: pointer;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 0px 20px 20px 0px;
 }
 .boutonReNone{
     display: none;
@@ -554,29 +555,33 @@ header .logoTaille{
     align-items: center;
 }
 .PaddingLeft{
-    padding-left: 50px;
+    padding-left: 20px;
 }
 .recherche{
-    width: 600px;
-    height: 150px;
+    width: 80%;
+    height: 80px;
     font-size: 50px;
     text-align: center;
     color: #000000;
     font-weight: bold; 
+}
+.recherche input{
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
 }
 /**** Filtres *****/
 .filtreNone{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 1000px;
-    margin-left: 50px;
+    width: 100%;
+    margin-left: 10px;
     margin-top: 5px;
     margin-bottom:5px;
 }
 .filtreMarg{
-    font-size: 50px;
-    margin-right: 700px;
+    font-size: 30px;
     
 }
 .filtre1{
@@ -591,20 +596,19 @@ header .logoTaille{
 }
 
 .filtreBox{
-    height: 100px;
-    width: 900px;
+    height: 80px;
+    width: 90%;
     border: #F2F2F2 3px solid;
     border-radius: 50px ;
     margin-right: 10px; 
-    padding-right: 30px;
+    padding-right: 10px;
 }
 .filtresTexte{
-    font-size: 40px;
-    padding-left: 20px;
-    padding-right: 60px;
+    font-size: 30px;
+    
 }
 .filtresIcone{
-    font-size: 60px;
+    font-size: 30px;
     margin-left: 20px;
     border-radius: 25px;
     color: #0065FC;
@@ -618,7 +622,7 @@ header .logoTaille{
     width: 100%;
     order: 1;
     background-color: #f2f2f2;
-    margin-top: -100px;
+    margin-top: 50px;
 }
 
 .populaires-title h2{
@@ -756,7 +760,7 @@ font-size: 50px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 100px;
+    
 }
 .activites-title {
     margin: 0;
@@ -794,12 +798,12 @@ justify-content: center;
 /****** footer *****/
 footer{
  width: 100%;
- margin-left: 100px;
 }
 footer nav{
     font-size: 50px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-content: space-between;
 }
 }

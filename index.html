@@ -16,14 +16,14 @@
 
 <body>
     <div class="main-container">
-        <header class="flexBetween">
-                <div class="logoTaille">
-                    <img src="images/logo/Booki.png" alt="le-logo" >
-                </div>
-                <div class="sizeLiens flexBetween">
-                    <div class="sizeLien flexCenter bordureLien bordureLienM"><a class="colorLiens2 DecorationNone" href="" >Hébergements</a></div>
-                    <div class="sizeLien flexCenter"><a class="colorLiens1 DecorationNone" href="" >Activités</a></div>
+        <header >
+            <div class="entete flexBetween">
+                <img src="images/logo/Booki.png" alt="le-logo" >
+                <div class="sizeLiens flexAround">
+                    <div class="sizeLien flexCenter bordureLien bordureLienM-B"><a class="colorLiens2 DecorationNone" href="" >Hébergements</a></div>
+                    <div class="sizeLien flexCenter bordureLienM-G"><a class="colorLiens1 DecorationNone" href="" >Activités</a></div>
                 </div> 
+            </div>    
         </header>
         <main>
             <section>
@@ -32,12 +32,14 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve </h2>
                     <p>En plein centre-ville ou en pleine nature</p>  
                 </div>
-                <div class="bar-recherche flexCenter">         
-                    <div class="backGris iconSize flexCenter"><i class="fa-solid fa-location-dot colorNoir"></i></div>
-                    <div >
-                        <input class="recherche flexCenter rechercheBordure paddingLeft" type="search" value="Marseille , France">
+                <div class="bar-recherche">         
+                    <div class="backGris iconSize flexCenter">
+                        <i class="fa-solid fa-location-dot fa-lg colorNoir"></i>
+                    </div>
+                    <div class="recherche">
+                        <input class=" flexCenter rechercheBordure" type="search" value="Marseille , France">
                     </div>   
-                    <div class="backBleu boutonRecherche flexCenter">
+                    <div class="boutonRecherche flexCenter backBleu ">
                         <span class="boutonReNone">Rechercher </span>
                         <span class="DeskNone"><i class="fas fa-search"></i></span>
                     </div>
@@ -255,31 +257,23 @@
                 <div class="activites-title">
                      <h2>Activités à Marseille </h2>
                 </div>   
-                <div class="activites-cards"> 
-                    <article class="card">
-                        <div class="card-content">
-                            <img src="images/activites/reno-laithienne.jpg" alt="">
-                            <h4>Vieux-Port</h4>
-                        </div> 
-                    </article>
-                    <article class="card">
-                        <div class="card-content">
-                                <img src="images/activites/paul-hermann.jpg" alt="">
-                                <h4>Fort de Pomègues</h4>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-content">
-                            <img src="images/activites/kilyan-sockalingum.jpg" alt="">
-                            <h4>Parc national des Calanques</h4>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-content">
-                            <img src="images/activites/florian-wehde.jpg" alt="">
-                            <h4>Notre-Dame-de-la-Garde</h4>
-                        </div>
-                    </article>
+                <div class="activites-cards">
+                    <div class="card-content">
+                        <img src="images/activites/reno-laithienne.jpg" alt="">
+                        <h4>Vieux-port</h4>
+                    </div>
+                    <div class="card-content">
+                        <img src="images/activites/paul-hermann.jpg" alt="">
+                        <h4>Fort de Pomègues</h4>
+                    </div>
+                    <div class="card-content">
+                        <img src="images/activites/kilyan-sockalingum.jpg" alt="">
+                        <h4>Parc national des Calanques</h4>
+                    </div>
+                    <div class="card-content">
+                        <img  src="images/activites/florian-wehde.jpg" alt="">
+                        <h4>Notre-dame-de-la-garde</h4>
+                    </div>
                 </div>
             </div>
         </main>
