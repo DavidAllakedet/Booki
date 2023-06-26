@@ -64,7 +64,7 @@ main{
     width : 20%
 }
 .sizeLien {
-    width: 140px;
+    width: 50%;
     height: 80px;
 }
 .colorLiens1{
@@ -74,7 +74,7 @@ main{
     color: #0065FC;
 }
 .bordureLien{
-    border-top: #0065FC 2px solid;
+    border-top: #0065FC 3px solid;
 }
 .rechercheBordure{
     border: 1px solid #F2F2F2;
@@ -102,6 +102,10 @@ main{
 }
 .backGris{
     background-color: #F2F2F2;
+}
+/****** txtsDebut *******/
+.txtsDebut p{
+margin-top: -15px;
 }
 
 /***** Bar de recherche ***/
@@ -138,17 +142,24 @@ main{
 .recherche input{
     width: 100%;
     height: 50px;
-    font-size: 20px;
+    font-size: 20px ;
     font-weight: bold;
     padding-left: 20px;
+}
+::placeholder{
+    color: #000000;
 }
 /**** Filtres *****/
 
 .filtres{
     display: flex;
-    align-items: center ;
+    flex-direction: row;
     margin-top: 50px;
     margin-bottom:30px;
+}
+.filtres1-2{
+    display: flex;
+    flex-direction: row;
 }
 .filtre1{
     display: flex;
@@ -418,6 +429,43 @@ margin-left: 20px;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .sizeLiens{
+        gap: 30px;
+    }
+    .bordureLienM-B{
+width: 500px;
+    }
+    /***** Bar de recherche ***/
+    .bar-recherche{
+        width: 80%;
+        height: 80px;
+    }
+    .iconSize{
+        width: 10%;
+    }
+    .boutonRecherche{
+        font-size: 20px;
+        width: 20%;
+        
+
+    }
+    .recherche{
+        font-size: 20px;
+        width: 40%;
+    
+    }
+    /***** filtres ******/
+    .filtres{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-top: 0px;
+    }
+    .filtres1-2{
+        display: flex;
+        flex-direction: row;
+    }
+    /******* hebergement ***((***/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -448,6 +496,18 @@ margin-left: 20px;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    /******* activites *******/
+    .activites-cards{
+        margin-bottom: -40px;
+    }
+    .activites-cards .card-content img{
+        height: 250px;
+    }
+    .activites-cards .card-content h4{
+        height: 20px;
+        font-size: 15px;
+        margin-left:10px ;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -467,8 +527,8 @@ margin-left: 20px;
 }
 .sizeLiens{
     width: 100%;
-    display: flex;
     flex-direction: row;  
+    gap: 0;
 }
 .sizeLien {
     width: 50%;
@@ -479,11 +539,11 @@ margin-left: 20px;
     border-top: none;
 }
 .bordureLienM-B{
-    border-bottom: #0065FC 2px solid;
+    border-bottom: #0065FC 3px solid;
     size:150%;
 }
 .bordureLienM-G{
-    border-bottom:  #F2F2F2 2px solid;
+    border-bottom:  #F2F2F2 3px solid;
     size: 150%;
 }
 
@@ -570,48 +630,35 @@ margin-left: 20px;
     font-size: 40px;
 }
 /**** Filtres *****/
-.filtreNone{
-    display: flex;
+.filtres1-2{
     flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom:5px;
+    gap: 20px;
 }
 .filtreMarg{
-    font-size: 30px;
+    font-size: 30px;  
     
 }
 .filtre1{
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-left: 0;
 }
 .filtre2{
     display: flex;
     flex-direction: row;
-    
 }
 
 .filtreBox{
     height: 80px;
-    width: 90%;
+    width: 100%;
     border: #F2F2F2 3px solid;
     border-radius: 50px ;
-    margin-right: 10px; 
-    padding-right: 10px;
 }
 .filtresTexte{
-    font-size: 30px;
-    
+    font-size: 30px; 
 }
 .filtresIcone{
     font-size: 30px;
-    margin-left: 20px;
-    border-radius: 25px;
-    color: #0065FC;
-
 }
 
 /****** Populaires mobile***********/
