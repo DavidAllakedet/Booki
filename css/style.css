@@ -5,9 +5,9 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
-main{
+/*main{
     padding-left: 20px;
-}
+}*/
 
 :root {
     --main-color: #0065FC;
@@ -48,7 +48,7 @@ main{
 }
 /***** mes liens de navigation et leur couleurs ****/
 .entete img{
-    margin-left: 10px;
+    
     width: 80px;
 }
 
@@ -436,7 +436,7 @@ margin-left: 20px;
 
     }
     .entete img{
-        margin-left: 20px;
+       
         width: 80px;
     }
     
@@ -630,7 +630,7 @@ margin-left: 20px;
     font-size: x-large;
    } 
    .marseille-france{
-    width: 70%;
+    width: 60%;
     height: 60px;
    }
    .marseille-france input{
