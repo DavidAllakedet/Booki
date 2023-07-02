@@ -1,6 +1,7 @@
 /****** General ***********/
 
 * {
+    max-width: 1440px;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
@@ -554,12 +555,11 @@ margin-left: 20px;
     }
 }
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /* ... */
     
 /**  header **/
    /***** mes liens de navigation et leur couleurs ****/ 
-
 .entete{
     width: 100%;
     display: flex;
@@ -636,8 +636,8 @@ margin-left: 20px;
    .marseille-france input{
     width: 110%;
     height: 60px;
-    font-size: 22px;
-    padding-left: 50px;
+    font-size: 20px;
+    padding-left: 30px;
    }
    .boutonReNone{
     display: none;
