@@ -6,9 +6,15 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
-/*main{
-    padding-left: 20px;
-}*/
+header{
+    margin: 0 10px 0 30px;
+}
+main{
+   margin: 50px; 
+}
+footer{
+margin:0 50px 0 50px;
+}
 
 :root {
     --main-color: #0065FC;
@@ -135,38 +141,36 @@
     display: flex;
     flex-direction: row;
     padding-top: 30px;
-    
 }
 .iconSize{
     width: 50px;
-    height: 49px;
+    height: 50px;
     background-color:#F2F2F2;
     color: #000000;
     border-radius: 15px 0 0 15px;
+    border: none;
 }
 .iconSize i{
     align-self: center;
     width: 14px;
     height: 18px;
     padding-top: 15px;
+    font-size: x-large;
 }
 .marseille-france{
-    width: 17%;
-    height: 50px;
-   
-}
-.marseille-france input{
-    width: 100%;
-    height: 49px;
-    font-size: 16px ;
+    width:220px;
+    height: 48px;
+    padding-left: 20px;
+    font-size: 18px;
     font-weight: bold;
-    padding-left: 10px;
 }
 .boutonRecherche{
-    width: 132px;
-    height: 49px;
+    width: 128px;
+    height: 50px;
+    font-size: 18px;
     color: white;
     cursor: pointer;
+    border: none;
     border-radius: 0 15px 15px 0;
 }
 .DeskNone{
@@ -178,6 +182,7 @@
 /**** Filtres *****/
 
 .filtreMarg{
+    font-size: 20px;
     margin-top: 15px;
 }
 .filtres{
@@ -206,7 +211,7 @@
     margin-right: 20px;
 }
 .filtresTexte{
-    height: 50px;
+    font-size: 18px;
     padding-right: 20px;
 }
 .filtresIcone{
@@ -346,6 +351,7 @@
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 .populaires-cards .card-content {
@@ -395,9 +401,10 @@
 }
 .activites-cards .card-content img{
     width: 100%;
-    height: 400px;
+    height: 380px;
     border-top-left-radius:15px;
     border-top-right-radius: 15px;
+    object-fit: cover;
 }
 .activites-cards .card-content h4{
     height: 30px;
@@ -432,6 +439,9 @@ margin-left: 20px;
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     /*********** enetete *****/
+    header{
+        margin: 0 20px 0 50px;
+    }
     .entete{
 
     }
@@ -447,52 +457,13 @@ margin-left: 20px;
         width: 50%;
         height: 80px;
     }
-    /***** Bar de recherche ****/  
-     .bar-recherche{
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: -30px;
-    
-}
-.iconSize{
-    width: 70px;
-    height: 59px;
-    background-color:#F2F2F2;
-    color: #000000;
-    border-radius: 15px 0 0 15px;
-}
-.iconSize i{
-    align-self: center;
-    font-size: xx-large;
-    padding-top: 15px;
-}
+    /***** Bar de recherche **/
 .marseille-france{
-    width: 40%;
-    height: 60px;
-   
-}
-.marseille-france input{
-    width: 100%;
-    height: 59px;
-    font-size: 18px;
-    padding-left: 20px;
-}
-.boutonRecherche{
-    width: 100px;
-    height: 59px;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 15px 15px 0;
-}
-.DeskNone{
-    display: none;
-}
-::placeholder{
-    color: #000000;
+width: 250px;
 }
     /***** filtres ******/
     .filtres{
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
     }
@@ -543,11 +514,13 @@ margin-left: 20px;
     .activites-cards{
     }
     .activites-cards .card-content img{
-        height: 200px;
+        height: 230px;
         object-fit: cover;
     }
     .activites-cards .card-content h4{
-        height: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        height: 20px;
         font-size: 14px;
         
     
@@ -558,6 +531,15 @@ margin-left: 20px;
     /* ... */
     
 /**  header **/
+header{
+    margin: 0;
+}
+main{
+    margin: 30px;
+}
+footer{
+    margin: 0 30px 0 30px;
+}
    /***** mes liens de navigation et leur couleurs ****/ 
 .entete{
     width: 100%;
@@ -597,6 +579,7 @@ margin-left: 20px;
     padding: 15px;
 }
 .txtsDebut h4{
+    font-size: 18px;
     margin-bottom: 15px;
 }
    
@@ -618,42 +601,55 @@ margin-left: 20px;
     /***** Bar de recherche ***/
    .bar-recherche{
     width: 100%;
-    padding-left: 15px;
+   
     
    }
    .iconSize{
-    width: 60px;
-    height: 60px;
-   }
-   .iconSize i{
-    font-size: x-large;
-   } 
-   .marseille-france{
-    width: 60%;
-    height: 60px;
-   }
-   .marseille-france input{
-    width: 110%;
-    height: 60px;
+    width: 18%;
+    height: 50px;
+    background-color:#F2F2F2;
+    color: #000000;
+    border-radius: 15px 0 0 15px;
+    border: none;
+}
+.iconSize i{
+    align-self: center;
+    width: 14px;
+    height: 18px;
+    padding-top: 15px;
     font-size: 20px;
-    padding-left: 30px;
+}
+form input{
+    width: auto;
+}
+.marseille-france{
+    box-sizing: border-box;
+    width: 60%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border-right: none;
+}
+.boutonRecherche{
+    position: relative;
+    left: -10px;
+    width: 16%;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+}
+   .DeskNone{
+    display: block;
+    font-size: large;
+    padding-left: 0px;
+    padding-top: 5px;
+    border: none;
    }
    .boutonReNone{
     display: none;
    }
-   .boutonRecherche{
-    display: block;
-    width: 70px;
-    height: 60px;
-    border-radius: 15px;
-   }
-   .DeskNone{
-    display: block;
-    font-size: x-large;
-    padding-left: 20px;
-    padding-top: 15px;
-   }
-
 /**** Filtres *****/
 .filtres{
     width: 100%;
@@ -680,17 +676,19 @@ margin-left: 20px;
 }
 
 .filtreBox{
-    width: 45%;
-    height: 70px;
+    width: 50%;
+    height: 50px;
     border: #F2F2F2 2px solid;
     border-radius: 30px ;
 }
 .filtresTexte{
-    font-size: 18px; 
+    font-size: 16px; 
+    margin: 0;
+    padding: 0;
 }
 .filtresIcone{
-   width: 10%;
-   height: 22px;
+   width: 7%;
+   height: 16px;
 }
 
 /****** Populaires mobile***********/
@@ -844,7 +842,7 @@ font-size: 22px;
 
 /****** footer *****/
 footer{
- width: 100%;
+ 
  
 }
 footer nav{
@@ -857,4 +855,20 @@ footer nav{
     margin-top: 30px;
 }
 
+}
+
+@media (max-width: 360px){
+
+    /**** Filtres *****/
+    .filtresTexte{
+        font-size: 10px; 
+    }
+    .marseille-france input{
+        font-size: 12px;
+    
+       }
+       .filtresIcone{
+        width: 6px;
+        height: 4px;
+     }
 }
