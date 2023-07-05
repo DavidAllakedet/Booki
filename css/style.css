@@ -790,6 +790,7 @@ footer{
 .hebergements-and-populaires .hebergements{
     background-color: #ffffff;
     width: 100%;
+    margin-bottom: 0;
 }
 .hebergements {
     margin-top: 20px;
@@ -850,6 +851,8 @@ font-size: 16px;
     width: 90%;
     padding-left: 15px;
     align-items: center;
+    margin-bottom: 60px;
+    margin-top: 0;
     
 }
 .activites-title {
@@ -874,7 +877,7 @@ font-size: 16px;
 
 /****** footer *****/
 footer{
- 
+ margin-top: 50px;
  
 }
 footer nav{
