@@ -439,7 +439,7 @@ nav{
 display: flex;
 justify-content: space-between;
 width: 80%;
-margin-left: 20px;
+margin-left: 30px;
 }
 .footerLienMarg{
     margin-top: 10px;
@@ -848,11 +848,12 @@ font-size: 16px;
    .activites {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    padding-left: 15px;
+    width: 98%;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 0;
     margin-top: 0;
+    padding: 50px;
+    box-sizing: border-box;
     
 }
 .activites-title {
@@ -861,7 +862,7 @@ font-size: 16px;
 .activites-cards{
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
 }
 .activites-cards .card-content img{
     width: 100%;
@@ -877,7 +878,8 @@ font-size: 16px;
 
 /****** footer *****/
 footer{
- margin-top: 50px;
+ margin: 0;
+
  
 }
 footer nav{
