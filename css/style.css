@@ -1,13 +1,15 @@
 /****** General ***********/
 
 * {
-    max-width: 1440px;
-    margin: 0;
-    padding: 0;
+    
     font-family: 'Raleway', sans-serif;
 }
 header{
-    margin: 0 10px 0 30px;
+    margin: 0 50px 0 30px;
+}
+body{
+    max-width: 1440px;
+    margin: auto;
 }
 main{
    margin: 50px; 
@@ -185,21 +187,22 @@ margin:0 50px 0 50px;
 /**** Filtres *****/
 
 .filtres{
-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom:30px;
     gap: 10px;
 }
 .filtreMarg{
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 0;
     
 }
 .filtres1-2{
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
 }
 .filtre1{
     display: flex;
@@ -331,7 +334,8 @@ width: 100%;
 }
 
 .hebergements-cards .card-rating {
-    margin-top: 7px;
+    margin-bottom: 5px;
+    margin-top: 0;
 }
 
 .afficherPlus{
@@ -450,13 +454,6 @@ margin-left: 20px;
     header{
         margin: 0 20px 0 50px;
     }
-    .entete{
-
-    }
-    .entete img{
-       
-        width: 80px;
-    }
     
     .sizeLiens{
         width : 30%;
@@ -476,13 +473,9 @@ width: 250px;
         flex-direction: column;
     }
     .filtreMarg{
-        margin-bottom: 20px;
+        margin-bottom: 0;
     }
-    .filtres1-2{
-        width: 115%;
-        display: flex;
-        flex-direction: row;
-    }
+  
 
     .filtresTexte{
         font-size: 16px;
@@ -550,11 +543,21 @@ header{
     margin: 0;
 }
 main{
-    margin: 30px;
+    margin:0 ;
+}
+main .main-1{
+    margin:0 30px 0 30px;
+}
+body{
+    width: 100%;
+}
+body main .hebergements-and-populaires .populaires{
+    margin: 0;
 }
 footer{
-    margin: 0 30px 0 30px;
+    margin: 0;
 }
+
    /***** mes liens de navigation et leur couleurs ****/ 
 .entete{
     width: 100%;
@@ -595,11 +598,9 @@ footer{
 
 /****** textes debut *******/
 .txtsDebut{
-    width: 90%;
-    height: 79px;
-    gap: 20px;
-    margin-bottom: 10px;
-    padding: 15px;
+   font-size: 20px;
+ 
+    
 }
 .txtsDebut h4{
     font-size: 18px;
@@ -607,6 +608,7 @@ footer{
 }
    
 /****** paragraphe info *****/
+
 .infoIcone{
     border: 1px solid #F2F2F2;
     border-radius: 20px;
@@ -624,7 +626,6 @@ footer{
     /***** Bar de recherche ***/
    .bar-recherche{
     width: 100%;
-   
     
    }
    .iconSize{
@@ -641,9 +642,6 @@ footer{
     height: 18px;
     padding-top: 15px;
     font-size: 22px;
-}
-form input{
-    width: auto;
 }
 .marseille-france{
     box-sizing: border-box;
@@ -717,14 +715,24 @@ form input{
    
 }
 
+/****** hebergements-and-populaires ****/
+.hebergements-and-populaires section {
+    background-color: #F2F2F2;
+    border-radius: 0;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
 /****** Populaires mobile***********/
-.populaires {
+.hebergements-and-populaires .populaires{
     display: flex;
     flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 0;
     width: 100%;
-    order: 1;
-    background-color: #f2f2f2;
-}
+    box-sizing: border-box;
+    
+}y
 .populaires-title{
     width: 100%;
     display: flex;
@@ -777,14 +785,12 @@ form input{
     background-color: #ffffff;
     width: 100%;
 }
-.hebergements-and-populaires .populaires{
-    background-color: #F2F2F2;
-    border-radius: 0;
-    width: 100%;
-    
-}
-/****** Hebergements  mobile***********/
 
+/****** Hebergements  mobile***********/
+.hebergements-and-populaires .hebergements{
+    background-color: #ffffff;
+    width: 100%;
+}
 .hebergements {
     margin-top: 20px;
     order: 2;
