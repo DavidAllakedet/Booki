@@ -256,6 +256,8 @@ margin:0 50px 0 50px;
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    gap: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -268,8 +270,10 @@ margin:0 50px 0 50px;
 /****** Hebergements ***********/
 
 .hebergements {
-    width: 68%;
+    width: 70%;
+    height: 650px;
     margin-bottom: 30px;
+    box-sizing: border-box;
     
 }
 
@@ -282,6 +286,7 @@ margin:0 50px 0 50px;
     display: inline-flex;
     flex-direction: column;
     width: 100%;
+   
 
 }
 .hebergements-cards .container1{
@@ -344,7 +349,9 @@ margin:0 50px 0 50px;
 }
 /****** Populaires ***********/
 .populaires {
-    width: 28%;
+    width: 30%;
+    box-sizing: border-box;
+    height: 650px;
 }
 
 .populaires-title {
@@ -390,8 +397,9 @@ margin:0 50px 0 50px;
 
 /***** Activites marseille*****/
 .activites {
-    width: 96%;  
-    margin-left: 2%;
+    width: 100%;  
+    box-sizing: border-box;
+    padding: 0 30px 0 30px;
 }
 .activites-title {
   width: 100%;
@@ -426,8 +434,6 @@ margin:0 50px 0 50px;
     padding-left: 10px;
     padding-top: 20px;
 }
-
-
 /****** footer *****/
 footer{
 background-color: #F2F2F2;
@@ -472,6 +478,9 @@ width: 250px;
         display: flex;
         flex-direction: column;
     }
+    .filtres1-2{
+        margin-top: 0;
+    }
     .filtreMarg{
         margin-bottom: 0;
     }
@@ -494,6 +503,7 @@ width: 250px;
 
     .populaires {
         width: 100%;
+        height: 270px;
         margin-top: 30px;
     }
 
@@ -517,8 +527,6 @@ width: 250px;
     /******* activites *******/
     .activites{
         margin-top: 50px;
-    }
-    .activites-cards{
     }
     .activites-cards .card-content img{
         height: 230px;
@@ -716,7 +724,7 @@ footer{
 }
 
 /****** hebergements-and-populaires ****/
-.hebergements-and-populaires section {
+.hebergements-and-populaires section  {
     background-color: #F2F2F2;
     border-radius: 0;
     padding: 50px;
@@ -730,9 +738,10 @@ footer{
     background-color: #F2F2F2;
     border-radius: 0;
     width: 100%;
+    height: auto;
     box-sizing: border-box;
     
-}y
+}
 .populaires-title{
     width: 100%;
     display: flex;
@@ -784,6 +793,7 @@ footer{
 .hebergements-and-populaires .hebergements{
     background-color: #ffffff;
     width: 100%;
+    height: auto;
 }
 
 /****** Hebergements  mobile***********/
@@ -824,7 +834,7 @@ font-size: 16px;
 
 .hebergements-cards .card-content {
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -852,7 +862,7 @@ font-size: 16px;
     align-items: center;
     margin-bottom: 0;
     margin-top: 0;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
     box-sizing: border-box;
     
 }
