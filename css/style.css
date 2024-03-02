@@ -544,6 +544,8 @@ width: 250px;
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
     /* ... */
+
+    
     
 /**  header **/
 header{
@@ -636,7 +638,7 @@ footer{
     
    }
    .iconSize{
-    width: 70px;
+    width: 100px;
     height: 60px;
     background-color:#F2F2F2;
     color: #000000;
@@ -668,6 +670,7 @@ footer{
     border-radius: 15px 15px 15px 15px;
 }
 .boutonRecherche i{
+    width:50px;
     font-size: 22px;
 }
    .DeskNone{
@@ -713,7 +716,7 @@ footer{
 }
 .filtresTexte{
     position: inherit;
-    font-size: 18px; 
+    font-size: 16px; 
     
 }
 .filtresIcone{
